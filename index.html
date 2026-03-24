@@ -3,21 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Lotto Fortune | Your Daily Numbers & Vibes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
-        <h1>Lotto Number Generator</h1>
-        <button id="generate-btn">Generate Numbers</button>
-        <div id="numbers-container" class="numbers-container"></div>
-        
-        <div class="fortune-section">
-            <button id="fortune-btn">Check Today's Fortune</button>
-            <p id="fortune-display" class="fortune-display"></p>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Lotto<span>Fortune</span></div>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#tools">Tools</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Unlock Your <span>Luck</span> Today</h1>
+                <p>Generate your winning lotto numbers and receive a positive daily fortune to start your day right.</p>
+                <div class="hero-btns">
+                    <a href="#tools" class="cta-btn primary">Get Started</a>
+                    <a href="#features" class="cta-btn secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <h2>Our Features</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🎰</div>
+                    <h3>Lotto Generator</h3>
+                    <p>6 unique, sorted numbers (1-45) at the click of a button.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✨</div>
+                    <h3>Daily Fortune</h3>
+                    <p>Start your day with a positive, uplifting message for your soul.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌓</div>
+                    <h3>Theme Mode</h3>
+                    <p>Sleek dark and light modes that remember your preferences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <div class="section-header">
+                <h2>Try the Tools</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="container">
+                <div class="tool-card">
+                    <h3>Lotto Number Generator</h3>
+                    <button id="generate-btn">Generate Numbers</button>
+                    <div id="numbers-container" class="numbers-container"></div>
+                </div>
+
+                <div class="tool-card fortune-section">
+                    <h3>Today's Fortune</h3>
+                    <button id="fortune-btn">Check Today's Fortune</button>
+                    <p id="fortune-display" class="fortune-display"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="logo">Lotto<span>Fortune</span></div>
+                <p>Bringing you a little bit of luck every day.</p>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 LottoFortune. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>

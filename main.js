@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const fortuneBtn = document.getElementById('fortune-btn');
     const fortuneDisplay = document.getElementById('fortune-display');
+    const navbar = document.querySelector('.navbar');
     const body = document.body;
 
     // Theme Management
@@ -23,6 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateToggleIcon(isDark) {
         themeToggle.textContent = isDark ? '☀️' : '🌙';
     }
+
+    // Navbar Scroll Effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.boxShadow = 'var(--card-shadow)';
+            navbar.style.padding = '0.5rem 0';
+        } else {
+            navbar.style.boxShadow = 'none';
+            navbar.style.padding = '1rem 0';
+        }
+    });
 
     // Lotto Logic
     generateBtn.addEventListener('click', () => {

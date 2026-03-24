@@ -1,41 +1,38 @@
-# Lotto Number Generator Blueprint
+# Lotto & Fortune Landing Page Blueprint
 
 ## Overview
-A simple, modern web application for generating random lotto numbers (1-45) and providing a positive "Today's Fortune," built with HTML, CSS, and JavaScript.
+A modern, professional landing page featuring interactive tools for generating lotto numbers and receiving daily fortunes. Designed for a sleek, engaging user experience with a responsive, sectioned layout.
 
 ## Features
--   **Random Lotto Generation:** Generates 6 unique numbers between 1 and 45.
--   **Sorted Output:** Displays lotto numbers in ascending order.
--   **Today's Fortune:** Provides a random, positive daily fortune message.
--   **Modern Design:** Clean, responsive UI with Poppins font and interactive elements.
--   **Theme Switching:** Support for Light and Dark modes with persistent user preference.
+-   **Hero Section:** A powerful call-to-action to engage users immediately.
+-   **Features Overview:** Highlights the key tools: Lotto Generation and Daily Fortunes.
+-   **Interactive Lotto Generator:** A dedicated tool for generating 6 unique, sorted numbers (1-45).
+-   **Daily Fortune Teller:** A random, positive fortune generator to brighten the user's day.
+-   **Dark/Light Mode:** Full theme support with persistence across sessions.
+-   **Responsive Layout:** Optimized for all screen sizes with a clean header and footer.
 
 ## Tech Stack
--   HTML5
--   CSS3 (Custom Properties, Flexbox)
--   JavaScript (ES Modules, LocalStorage)
+-   **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox, Animations).
+-   **Logic:** JavaScript (ES Modules, LocalStorage).
+-   **Typography:** Google Fonts (Poppins).
 
-## Implementation Plan: Today's Fortune
+## Implementation Plan: Landing Page Transformation
 
 ### Objective
-Add a fun, engaging feature that gives users a positive boost with a random daily fortune message.
+Elevate the current app from a single tool into a comprehensive landing page.
 
 ### Key Files
--   `index.html`: Add a fortune display area and a trigger button.
--   `style.css`: Style the fortune section to be visually distinct and elegant.
--   `main.js`:
-    -   Create an array of positive fortunes.
-    -   Implement logic to pick and display a random fortune.
+-   `index.html`: Restructure into semantic sections (header, main, footer).
+-   `style.css`: Apply modern landing page styles, responsive design, and smooth animations.
+-   `main.js`: Update to handle any new UI interactions and maintain core tool logic.
 
 ### Implementation Steps
-1.  **Update HTML:** Add a `section` for fortunes and a "Get Fortune" button.
-2.  **Update CSS:** Add styling for the fortune text and its container, ensuring it fits the existing theme (dark/light).
-3.  **Update JS:**
-    -   Define an array of at least 10 positive fortunes.
-    -   Add an event listener to the fortune button.
-    -   Implement a function to update the fortune display.
-4.  **Verification:** Ensure both lotto and fortune features work independently and look good together.
+1.  **Refactor HTML:** Implement a structured layout including a navigation bar, a hero section, a features section, and a tools section.
+2.  **Refine CSS:** Focus on section-based spacing, hero typography, and smooth scrolling.
+3.  **Enhance UI:** Add hover effects, better buttons, and cohesive theme transitions.
+4.  **Verification:** Confirm all interactive tools are functional and the page is mobile-friendly.
 
 ## Previous Versions
 -   **Initial Version:** Basic generator with static light theme.
 -   **Theme Update:** Added dark/light mode toggle and persistence.
+-   **Fortune Update:** Added the positive fortune feature.
