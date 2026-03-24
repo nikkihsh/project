@@ -1,24 +1,37 @@
-# Lotto Number Generator
+# Lotto Number Generator Blueprint
 
 ## Overview
-
-This is a simple web application that generates random lottery numbers.
+A simple, modern web application for generating random lotto numbers (1-45), built with HTML, CSS, and JavaScript.
 
 ## Features
+-   **Random Generation:** Generates 6 unique numbers between 1 and 45.
+-   **Sorted Output:** Displays numbers in ascending order.
+-   **Modern Design:** Clean, responsive UI with Poppins font and circular number displays.
+-   **Theme Switching:** Support for Light and Dark modes with persistent user preference.
 
-*   Generates 6 unique random numbers between 1 and 45.
-*   Displays the generated numbers on the screen.
-*   Modern and clean user interface.
+## Tech Stack
+-   HTML5
+-   CSS3 (Custom Properties, Flexbox)
+-   JavaScript (ES Modules, LocalStorage)
 
-## Current Task
+## Implementation Plan: Theme Switching (Dark/Light Mode)
 
-### Plan
+### Objective
+Provide users with the ability to toggle between light and dark themes, preserving their preference across sessions.
 
-1.  **`index.html`**:
-    *   Change the title to "Lotto Number Generator".
-    *   Create the main structure of the application with a title, a button to generate numbers, and a container to display the numbers.
-2.  **`style.css`**:
-    *   Style the application with a modern and clean design, including a custom font, a visually appealing layout, and styles for the generated numbers.
-3.  **`main.js`**:
-    *   Implement the logic for generating 6 unique random numbers between 1 and 45.
-    *   Add an event listener to the button to trigger the number generation and display the results.
+### Key Files
+-   `index.html`: Add theme toggle UI element.
+-   `style.css`: Refactor styles to use CSS variables and define the dark theme.
+-   `main.js`: Implement toggle logic and persistence using `localStorage`.
+
+### Implementation Steps
+1.  **Refactor CSS:** Introduce `:root` variables for colors and create a `body.dark-theme` class to override them.
+2.  **Add Toggle UI:** Insert a theme switch button in `index.html`.
+3.  **Implement JS Logic:**
+    -   Detect system preference or `localStorage` on load.
+    -   Listen for toggle clicks.
+    -   Update `localStorage` and apply the class.
+4.  **Verification:** Test the toggle on different devices and ensure the preference persists after refresh.
+
+## Previous Versions
+-   **Initial Version:** Basic generator with static light theme.
