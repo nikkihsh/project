@@ -14,6 +14,7 @@
                 <a href="#hero">Home</a>
                 <a href="#features">Features</a>
                 <a href="#tools">Tools</a>
+                <a href="#contact">Contact</a>
             </nav>
             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
         </div>
@@ -26,7 +27,7 @@
                 <p>Generate your winning lotto numbers and receive a positive daily fortune to start your day right.</p>
                 <div class="hero-btns">
                     <a href="#tools" class="cta-btn primary">Get Started</a>
-                    <a href="#features" class="cta-btn secondary">Learn More</a>
+                    <a href="#contact" class="cta-btn secondary">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -71,6 +72,36 @@
                     <h3>Today's Fortune</h3>
                     <button id="fortune-btn">Check Today's Fortune</button>
                     <p id="fortune-display" class="fortune-display"></p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Partnership Inquiry</h2>
+                <div class="underline"></div>
+                <p>Interested in collaborating with LottoFortune? Send us a message!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <form action="https://formspree.io/f/mdapoyjb" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="_subject" value="Partnership Inquiry" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your proposal..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn primary submit-btn">Send Inquiry</button>
+                    </form>
                 </div>
             </div>
         </section>
