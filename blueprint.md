@@ -17,6 +17,8 @@ A modern, professional landing page featuring interactive tools for generating l
 -   **Logic:** JavaScript (ES Modules, LocalStorage).
 -   **Typography:** Google Fonts (Poppins).
 -   **Form Handling:** Formspree.
+-   **Deployment:** Firebase Hosting.
+-   **CI/CD:** GitHub Actions.
 
 ## Implementation Plan: Landing Page Transformation
 
@@ -27,13 +29,16 @@ Elevate the current app from a single tool into a comprehensive landing page.
 -   `index.html`: Restructure into semantic sections (header, main, footer).
 -   `style.css`: Apply modern landing page styles, responsive design, and smooth animations.
 -   `main.js`: Update to handle any new UI interactions and maintain core tool logic.
+-   `firebase.json`: Hosting configuration for deployment.
+-   `.github/workflows/firebase-hosting-merge.yml`: Automatic deployment workflow.
 
 ### Implementation Steps
 1.  **Refactor HTML:** Implement a structured layout including a navigation bar, a hero section, a features section, a tools section, and a contact section.
 2.  **Refine CSS:** Focus on section-based spacing, hero typography, and smooth scrolling.
 3.  **Enhance UI:** Add hover effects, better buttons, and cohesive theme transitions.
 4.  **Integrate Contact Form:** Add a professional partnership inquiry form linked to Formspree.
-5.  **Verification:** Confirm all interactive tools and the contact form are functional and the page is mobile-friendly.
+5.  **Configure Hosting:** Initialize Firebase Hosting and set up automatic deployment via GitHub Actions.
+6.  **Verification:** Confirm all interactive tools and the contact form are functional and the page is mobile-friendly.
 
 
 ## Previous Versions
